@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>
+      {% block title %}
+      {% endblock %}
+    </title>
+    <!-- bootstrap's css -->
+    <link rel="stylesheet" href="{% static 'blog/css/bootstrap.min.css' %}">
+
+    <!-- internal css -->
+    <link rel="stylesheet" href="{% static 'blog/css/elements.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/objects.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/components.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/css/utilities.css' %}">
+    {% block css %}
+    {% endblock %}
+  </head>
+  <body>
+    {% block document %}
+
+    {% endblock document %}
+    <script src="{% static 'blog/js/jquery-3.4.1.js' %}"></script>
+    <script src="{% static 'blog/js/bootstrap.min.js' %}"></script>
+  </body>
+</html>
