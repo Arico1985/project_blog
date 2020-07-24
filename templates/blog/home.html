@@ -10,13 +10,16 @@
 {% block document %}
 <div class="bg-white">
   <nav class="container flex  ">
-    <a class="ml-auto" href="#">
+    <a class="mr-auto align-self-bottom" href="{% url 'home' %}" target="_blank">
+      <img src="{% static 'blog/img/terminal.svg' %}">
+    </a>
+    <a class="ml-auto" href="https://github.com/Arico1985" target="_blank">
       <img src="{% static 'blog/img/github.svg' %}">
     </a>
   </nav>
 </div>
 <header class="text-center">
-  <h1>Hi, i'm Ben & i like experimenting and making stuff</h1>
+  <h1 class="description">Hi I'm Ben & I make things</h1>
 </header>
 
 {% endblock document %}

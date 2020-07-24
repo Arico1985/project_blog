@@ -12,3 +12,9 @@ COMPONENTS
 .shadow {
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.08);
 }
+.description {
+  font-size: 1.5em;
+}
+.align-self-bottom {
+  align-self: end;
+}
