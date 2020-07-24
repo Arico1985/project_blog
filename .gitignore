@@ -1,4 +1,5 @@
 *.pyc
 staticfiles
+.env
 project_blog/settings/development.py
 project_blog/urls_development.py
