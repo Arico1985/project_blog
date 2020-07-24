@@ -3,13 +3,20 @@
 
 <title >
     {% block title %}
-    home
+    benoitfesquet.website
     {% endblock %}
 </title >
 
 {% block document %}
-
-Tom is the best video game player in the world
-
+<div class="bg-white">
+  <nav class="container flex">
+    <a class="ml-auto" href="#">
+      <img src="{% static 'blog/img/github.svg' %}">
+    </a>
+  </nav>
+</div>
+<header class="text-center">
+  <h1>Hi, i'm Ben & i like experimenting and making stuff</h1>
+</header>
 
 {% endblock document %}
