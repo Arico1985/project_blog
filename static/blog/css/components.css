@@ -9,12 +9,37 @@ COMPONENTS
 .flex {
   display: flex
 }
+.align-center {
+  justify-content: center
+}
 .shadow {
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.08);
 }
-.description {
-  font-size: 1.5em;
-}
 .align-self-bottom {
   align-self: end;
+}
+
+.thumb {
+  width: 14em;
+  height: 20em;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+.thumb:hover {
+  background-image: none;
+  background-color: blue;
+}
+
+.thumb-habitap {
+  background-image:
+  linear-gradient(
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)
+    ), url("../img/habitap.png");
+}
+
+.thumb-header {
+  padding-top: 3em;
+  color: white;
 }

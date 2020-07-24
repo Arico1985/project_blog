@@ -3,12 +3,12 @@
 
 <title >
     {% block title %}
-    benoitfesquet.website
+    benoitfesquet.co
     {% endblock %}
 </title >
 
 {% block document %}
-<div class="bg-white">
+<div class="bg-white mx-1">
   <nav class="container flex  ">
     <a class="mr-auto align-self-bottom" href="{% url 'home' %}">
       <img src="{% static 'blog/img/terminal.svg' %}">
@@ -18,8 +18,19 @@
     </a>
   </nav>
 </div>
-<header class="text-center">
-  <h1 class="description">Hi I'm Ben & I make things</h1>
+
+<header class="text-center pb-2">
+  <h1>Hi I'm Ben & I make things</h1>
 </header>
 
+<div class="mx-1">
+  <a href="https://habitap.herokuapp.com/" target="_blank">
+    <div class="thumb thumb-habitap">
+      <h2 class="thumb-header">
+        <p>Habitap</p>
+        <p>(in progress)</p>
+      </h2>
+    </div>
+  </a>
+</div>
 {% endblock document %}
